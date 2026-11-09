@@ -15,6 +15,7 @@ pipeline{
             }
         }
         stage('post') {
+            steps{
             success{
                 echo "Build is successfully complete"
             }
@@ -23,4 +24,5 @@ pipeline{
             }
         }
     }
+}
 }
