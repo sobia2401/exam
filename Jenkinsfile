@@ -14,7 +14,7 @@ pipeline{
                 bat "docker run -d -p 5000:5000 --name-mycontainer-myfirstpythonapplication"
             }
         }
-        post {
+        stage('post') {
             success{
                 echo "Build is successfully complete"
             }
